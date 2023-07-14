@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascendant</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preload" href="scss/theme_style.css" as="style" type="text/css" media="print">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="scss/theme_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="Normal">
+
+    <header class="siteHeader">
+        <nav class="header-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="ascendant & Partners"></a>
+            </div>
+            <div class="menuNav">
+                <div class="menugroup">
+                    <div class="menugroupinner">
+                        <div class="menuItem">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="ascendant-core.html">Ascendant’s Core</a></li>
+                                <li><a href="products-services.html">Products & Services </a></li>
+                                <!-- <li><a href="insights.html">Insights</a></li> -->
+                                <li><a href="career.html">Career</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-pattern">
+                            <img src="images/menu-pattern.svg" alt="">
+                        </div>
+                        <div class="socialMedia">
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/ascendantdigital.io/" target="_blank"><img
+                                            src="images/instagram.svg" alt="instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/ascendantdigital.io/" target="_blank"><img
+                                            src="images/facebook.svg" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="https://ae.linkedin.com/company/ascendantdigitalsolutions?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                                        target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/ascendant_io" target="_blank"><img
+                                            src="images/twitter.svg" alt="twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@ascendantdigital3160" target="_blank"><img
+                                            src="images/youtube.svg" alt="youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="copy-text">
+                            <p class="hashtag">#AscendantDigitalSolutions <br> #ChangeTheGame</p>
+                            <p>© 2023 Ascendant Digital Solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accessibilityMenu">
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="accessibilityMenu"
+                            data-bs-toggle="dropdown" aria-expanded="false"> <img src="images/accessibility.svg"
+                                alt="accessibility"> </a>
+                        <form method="POST" id="accessibilityformheader" name="accessibilityformheader"
+                            class="header-form">
+                            <div class="dropdown-menu" aria-labelledby="accessibilityMenu"
+                                aria-label="accessibilityMenu">
+                                <div class="dropdown-menu-content d-flex justify-content-between">
+                                    <div class="font-size-contorl" data-fontsize="0">
+                                        <h2 class="dropdown-title">Text</h2>
+                                        <div class="button-list">
+                                            <div class="button-item">
+                                                <input type="button"
+                                                    class="fontControler font-decrease additional-click"
+                                                    id="btn-decrease" value="A-" name="font-size">
+                                                <input type="button"
+                                                    class="fontControler resetMe active additional-click" id="btn-orig"
+                                                    value="A" name="font-size">
+                                                <input type="button"
+                                                    class="fontControler font-increase additional-click"
+                                                    id="btn-increase" value="A+" name="font-size">
+                                                <input type="hidden" class="hidden-font-increase" value="0"
+                                                    id="hiddenId" name="font-size">
+                                            </div>
+                                            <h3 class="dropdown-sub-title">Size</h3>
+                                        </div>
+                                    </div>
+                                    <div class="color-picker-control">
+                                        <h2 class="dropdown-title">Color Blind</h2>
+                                        <div class="color-box themechangenew" id="themechange">
+                                            <input type="button" name="colorblindnew" aria-label="color picker"
+                                                class="backgroundColor additional-click" value="">
+                                            <input type="button" name="colorblindnew" aria-label="color picker"
+                                                class="forgroundColor postion-input additional-click" value="">
+
+                                            <!--<input type="hidden"   value="colors" id="colorblindidnew" name="colorblindnew">-->
+
+                                            <div class="switcher"> <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <h3 class="dropdown-sub-title">Color</h3>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-content">
+                                    <div class="motion-sensitivty-control">
+                                        <h2 class="dropdown-title">Motion Sensitivty </h2>
+                                        <div class="button-list">
+                                            <input type="button" name="motion-sensitivity"
+                                                class="motionControl additional-click" id="btn-off" value="Off"
+                                                aria-label="Motion Sensitivty off">
+                                            <input type="button" name="motion-sensitivity"
+                                                class="motionControl additional-click" id="btn-normal" value="Normal"
+                                                aria-label="Motion Sensitivty normal">
+                                            <input type="button" name="motion-sensitivity"
+                                                class="motionControl additional-click" id="btn-fast" value="Fast"
+                                                aria-label="Motion Sensitivty fast">
+                                            <input type="hidden" class="hidden-font-increase" value="Normal"
+                                                id="motionId" name="motion-sensitivity">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-content">
+                                    <div class="color-sensitivty-control">
+                                        <h2 class="dropdown-title">Color Sensitivity </h2>
+                                        <div class="input-itembox">
+                                            <div class="title">
+                                                <h3 class="dropdown-sub-title">ascendant colors</h3>
+                                            </div>
+                                            <div class="input-control">
+                                                <input class="toggle ascendantColorModeSwich additional-click"
+                                                    id="color-ascendant" data-color="ascendant-colors"
+                                                    aria-label="ascendant colors" value="ascendant-colors" type="radio"
+                                                    name='color-sensitivty' checked />
+                                            </div>
+                                        </div>
+                                        <div class="input-itembox">
+                                            <div class="title">
+                                                <h3 class="dropdown-sub-title">Soft color contrast</h3>
+                                            </div>
+                                            <div class="input-control">
+                                                <input class="toggle softColorModeSwich additional-click"
+                                                    id="color-soft" data-color="soft-colors"
+                                                    aria-label="Soft color contrast" value="soft-colors" type="radio"
+                                                    name='color-sensitivty' />
+                                            </div>
+                                        </div>
+                                        <div class="input-itembox">
+                                            <div class="title">
+                                                <h3 class="dropdown-sub-title">Red color weakness</h3>
+                                            </div>
+                                            <div class="input-control">
+                                                <input class="toggle redColorModeSwich additional-click" id="color-red"
+                                                    data-color="red-colors" aria-label="Red color weakness"
+                                                    value="red-colors" type="radio" name='color-sensitivty' />
+                                            </div>
+                                        </div>
+                                        <div class="input-itembox">
+                                            <div class="title">
+                                                <h3 class="dropdown-sub-title">High color contrast</h3>
+                                            </div>
+                                            <div class="input-control">
+                                                <input class="toggle hardColorModeSwich additional-click"
+                                                    id="color-high" data-color="high-colors"
+                                                    aria-label="High color contrast" value="high-colors" type="radio"
+                                                    name='color-sensitivty' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" class="hidden-font-increase" value="ascendant" id="clrblindId"
+                                name="color-blind">
+                        </form>
+                    </div>
+                </div>
+                <div class="burger"> <span></span> </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="container-fluid mainContent contact-page" data-bg-image="images/contact-bg.webp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 cnt-outer">
+                        <div class="contact-left">
+                            <p>Every day, Ascendant’s experts help businesses in the region accelerate growth through
+                                office automation and digital transformation, building a more sustainable and inclusive
+                                future.
+                            </p>
+                            <h4>How Can We Help?</h4>
+                            <ul>
+                                <li class="location"><span><img src="images/location.svg" alt="Location"></span> <a
+                                        target="_blank" href="https://goo.gl/maps/kBsUboWZCWhi9oLk7">Suite 1405, Al
+                                        Shafar Tower 1 - Al Fosool Street - Barsha Heights - Dubai - United Arab
+                                        Emirates</a></li>
+                                <li><span><img src="images/call.svg" alt="Phone"></span> <a
+                                        href="tel:+971(4)326-9010">+971 (4) 326-9010</a></li>
+                                <li><span><img src="images/mail.svg" alt="Email"></span> <a
+                                        href="mailto:info@ascendantdigital.io">info@ascendantdigital.io</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 cnt-outer">
+                        <div class="contact-right">
+                            <form id="contact_form" action="contactform.php" method="POST">
+                                <div class="row">
+                                    <div class="col-12 form-field">
+                                        <div class="field-box">
+                                            <input type="text" class="form-control" id="name" name="name"
+                                                placeholder="* Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 form-field">
+                                        <div class="field-box">
+                                            <input type="text" class="form-control" id="email" name="email"
+                                                placeholder="* Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 form-field">
+                                        <div class="field-box">
+                                            <input type="tel" class="form-control" id="phone" name="phone"
+                                                placeholder="* Phone / Mobile">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 form-field">
+                                        <div class="field-box">
+                                            <input type="text" class="form-control" id="company" name="company"
+                                                placeholder="* Company">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 form-field">
+                                        <div class="field-box">
+                                            <input type="text" class="form-control" id="country" name="country"
+                                                placeholder="Country">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 form-field">
+                                        <div class="field-box">
+                                            <textarea name="message" id="message" class="form-control"
+                                                placeholder="* Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="button-box">
+                                            <input type="submit" class="submit-btn" value="Submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="contact_msg"></div>
+                            <ul>
+                                <li class="location"><span><img src="images/location.svg" alt="Location"></span> Suite
+                                    903, Level 9 - Boulevard Plaza, Tower 1, Sheikh Mohammed bin Rashid Blvd, Downtown
+                                    Dubai, UAE</li>
+                                <li><span><img src="images/call.svg" alt="Phone"></span> <a
+                                        href="tel:00 971 4 527 6827">00 971 4 527 6827</a></li>
+                                <li><span><img src="images/mail.svg" alt="Email"></span> <a
+                                        href="mailto:info@ascendantdigital.io">info@ascendantdigital.io</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="hide-svg">
+        <div class="footer-top border-line">
+            <img src="images/footer-top.svg" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="footer-left">
+                        <div class="socialMedia">
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/ascendantdigital.io/" target="_blank"><img
+                                            src="images/instagram.svg" alt="instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/ascendantdigital.io/" target="_blank"><img
+                                            src="images/facebook.svg" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="https://ae.linkedin.com/company/ascendantdigitalsolutions?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                                        target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/ascendant_io" target="_blank"><img
+                                            src="images/twitter.svg" alt="twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@ascendantdigital3160" target="_blank"><img
+                                            src="images/youtube.svg" alt="youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="hashtag">#AscendantDigitalSolutions <br> #ChangeTheGame</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="footer-right">
+                        <p>© 2023 Ascendant Digital</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/smoothscroll.min.js"></script>
+    <script src="js/customcookie.js"></script>
+
+    <script src="js/accessibility.js"></script>
+    <script src="js/theme-script.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/contactform.js"></script>
+
+</body>
+
+</html>
